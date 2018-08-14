@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# forward nginx and php-gpm logs to docker host
+ln -sf /dev/stdout /var/log/nginx/access.log
+ln -sf /dev/stderr /var/log/nginx/error.log
+ln -sf /dev/stderr /var/log/php-fpm/5.6/www-error.log
+
 # Start the php-fpm process
 service php-fpm start
 status=$?
