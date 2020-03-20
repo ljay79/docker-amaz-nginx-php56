@@ -10,5 +10,6 @@ This repo creates a Docker image for NGINX + PHP 5.6 running on Amazon Linux.
 
 Version | Git branch | Tag name
 --------| ---------- |---------
-5.6.x   | master     | latest
-5.6.36  | master     | 5.6.36
+php 5.6.x   | master     | latest
+php 5.6.36  | -          | 5.6.36
+php 5.6.40; nginx 1.16.1  | master     | 5.6.40
